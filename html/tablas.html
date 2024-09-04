@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TABLAS</title>
+	<link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+</head>
+<body>
+	<table border id="tablaNormal">
+		<tr><!--FILA 1-->
+			<td>Elemento 1</td> <td>Elemento 2</td> <td>Elemento 3</td>
+		</tr>
+		<tr><!--FILA 2-->
+			<td>Elemento 4</td> <td>Elemento 5</td> <td>Elemento 6</td>
+		</tr>
+		<tr><!--FILA 3-->
+			<td>Elemento 7</td> <td>Elemento 8</td> <td>Elemento 9</td>
+		</tr>
+		<tr><!--FILA 4-->
+			<td>Elemento 10</td> <td>Elemento 11</td> <td>Elemento 12</td>
+		</tr>
+	</table>
+
+	<hr>
+	
+	<table border id="tablaRowspan"> <!--EJEMPLO FILA EXTENDIDA-->
+		<tr>
+			<td>Item 1</td> <td rowspan="2">Item 2</td> <td>Item 3</td>
+		</tr>
+		<tr>
+			<td>Item 4</td> <td>Item 5</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table border id="tablaColspan"> <!--EJEMPLO COLUMNA EXTENDIDA-->
+		<tr>
+			<td>Item 1</td>
+			<td colspan="2">Item 2</td>
+		</tr>
+		<tr>
+			<td>Item 3</td> <td>Item 4</td> <td>Item 5</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table border id="tablaCabecera">
+		<tr>
+			<th>Cabeza 1</th> <th>Cabeza 2</th> <th>Cabeza 3</th>
+		</tr>
+		<tr>
+			<td>Item 1</td> <td>Item 2</td> <td>Item 3</td>
+		</tr>
+		<tr>
+			<td>Item 4</td> <td>Item 5</td> <td>Item 6</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<table border id="tablaCabeceraLateral">
+		<tr>
+			<th rowspan="2">Cabecera 1</th>
+			<td>100</td> <td>200</td> <td>300</td>
+		</tr>
+		<tr>
+			<td>400</td> <td>500</td> <td>600</td>
+		</tr>
+		<tr>
+			<th>Cabecera 2</th>
+			<td>700</td> <td>800</td> <td>900</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<center> <!--(quitar el borde de una celda)-->
+		<table border id=tablaCombinada>
+			<caption align="bottom">Resumen de tablas</caption>
+			<tr>
+				<td><th>TABLE</th><th>TR</th><th>TD</th><th>TH</th><th>CAPTION</th></td>
+			</tr>
+			<tr align="center">
+				<th>BORDER</th><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<tr align="center">
+				<th>ROWSPAN</th><td>-</td><td>-</td><td>X</td><td>X</td><td>-</td>
+			</tr>
+			<tr align="center">
+				<th>COLSPAN</th><td>-</td><td>-</td><td>X</td><td>X</td><td>-</td>
+			</tr>
+			<tr align="center">
+				<th>CELLPADDING</th><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<TR align="center">
+				<th>CELLSPACING</th><td>X</td><td>-</td><td>-</td><td>-</td><td>-</td>
+			</TR>
+		</table>
+
+		<hr>
+
+		<table border id="tablaCombinada2">
+			<tr>
+				<td>
+					<th rowspan="2"></th> <th colspan="2">Media</th>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<th>Altura</th> <th>Peso</th>
+				</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Sexo</th> <th>Hombres</th> <td>1.9</td> <td>85</td>
+			</tr>
+			<tr>
+				<th>Mujeres</th> <td>1.7</td> <td>70</td>
+			</tr>
+		</table>
+
+		<hr>
+
+		<table id="tablaLetras" border=5 cellpadding="10" cellspacing="10" >
+			<colgroup style="background: red;"></colgroup>
+			<colgroup>
+				<col style="background: blue"></col>
+				<col style="background: #aaffaa"></col>
+			</colgroup>
+
+			<tr>
+				<td>&#60A&#62</td> <td>&#60B&#62</td> <td>&#60C&#62</td>
+			</tr>
+			<tr>
+				<td>D</td> <td>E</td> <td>F</td>
+			</tr>
+		</table>
+
+		<hr>
+
+		<table id="tablaMushroom" border="5" >
+			<caption align="top">Imagenes de Mushroom</caption>
+			<tr>
+				<td align="right"><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_Gold.png" width="64"></td> 
+				<td align="center"><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_Life.png"></td>
+					<td><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_Mega.png"></td>
+			</tr>
+			<tr>
+				<td align="right"><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_Mini.png"></td> 
+				<td align="center"><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_Spring.png"></td> 
+				<td><img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Mushroom_UP.png"></td>
+			</tr>
+			<tr>
+				<td id="celda1"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Shell_Green.png"> </td>
+				<td id="celda2"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Shell_Red.png"> </td>
+				<td id="celda3"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Shell_Super.png" width="64"> </td>
+			</tr>
+			<tr>
+				<td id="celda1"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Blooper.png"> </td>
+				<td id="celda2"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Chain_Chomp.png"> </td>
+				<td id="celda3"> <img src="D:\Daniel\Documentos\html_css_js\imagenes\mario\Bullet_Bill.png"> </td>
+			</tr>
+		</table>
+
+		<hr>
+
+		<table id="tableroDamas" border=7 cellpadding="10" cellspacing="1">
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+			<tr>
+				<td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td> <td>F</td> <td>G</td> <td>H</td>
+			</tr>
+		</table>
+
+		<hr>
+
+	</center>
+</body>
+</html>

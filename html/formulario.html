@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+</head>
+<body>
+
+	<section id="formulario">
+		<form name="frmregistro">
+			<fieldset>
+				<legend>Formulario de Registro</legend>
+				<p>
+					<!--la propiedad for doy el foco al elemento con el id="nombre"-->
+					<label for="email">Email: </label>
+
+					<!--la propiedad name servirá para cuando enviemos el elemento a un servidor-->
+					<input type="email" name="e" id="email" placeholder="email" autofocus required>
+				</p>
+				<p>
+					<label for="password">Email: </label>
+					<input type="password" name="p" id="password" placeholder="email" autocomplete="off">
+				</p>
+				<p>
+					<input type="submit" value="Login">
+					<br><br>
+					<!--Un button es más personalizable que un input de tipo submit-->
+					<button type="button">Tipo botón</button> <!--Se indica con js la acción que tendra-->
+					<button type="reset">Tipo reset</button> <!--Deja valores por defecto en el form-->
+					<button type="submit">Tipo submit</button> <!--envia el formulario a la ruta indicada-->
+				</p>
+			</fieldset>
+		</form>
+	</section>
+
+
+	<form method="post" action="index.html" oninput="año.value=2019-parseInt(edad.value)" >
+	<fieldset>
+		<legend><h1>Datos Personales</h1></legend>
+
+		<label for="nombre">Escriba su nombre: </label> <br>
+		<input type="text" placeholder="Escriba su nombre" maxlength="15" autofocus required> <br>
+		<input type="text" placeholder="Escriba su apellido" maxlength="15" required> <br>
+		<input type="password" placeholder="Escriba su contraseña" maxlength="15" required><br>
+		<input type="email" disabled> <br>
+		<input type="color"><br>
+		<label for="edad">Registre su edad: </label> 
+		<input type="number" name="edad" min="18" max="60" step="1" value="18" required><br>
+		<label>Año de nacimiento: <output name="año"></output> </label> 
+
+		<br>
+		<input type="submit"> 
+		<input type="button" onclick="JAVASCRIPT:ALERT('Saludos desde el boton')" value="Ver Saludo"/><br>
+		Opcion A<input type="radio" name="opcion" value="A" checked>
+		Opcion B<input type="radio" name="opcion" value="B">
+		<input type="image" name="imagen" src="imagenes/mario/Blooper.png">
+		
+		<select> <!--COMBOBOX-->
+			<option value="Guatemala">Guatemala</option>
+			<option value="Honduras">Honduras</option>
+			<option value="Panama">Panama</option>
+		</select><br><br><br>
+
+		<input list="meses"> <!--TEXTBOX CON LISTA-->
+		<datalist id="meses">
+			<option value="enero">Enero</option>
+			<option value="febrero">Febrero</option>
+			<option value="marzo">Marzo</option>
+		</datalist>
+	</fieldset>
+	</form>
+
+	<br>
+	<hr>
+	<section id=seccionFormulario>
+		<p> Texto con estilo </p>
+	</section>
+
+
+</body>
+</html>

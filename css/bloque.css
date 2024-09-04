@@ -1,0 +1,34 @@
+#titulo{
+	color: brown;
+	font-style: italic;
+	border: 1px solid black;
+}
+#interno1{
+	border: black 3px solid;
+	margin: 15px;
+	overflow: auto; /*Hace que los elementos flotantes sean conciderados en el tamaño del contenedor*/ 
+}
+#interno2{
+	border: black 3px solid;
+	margin: 15px;
+	overflow: auto; /*Hace que los elementos flotantes sean conciderados en el tamaño del contenedor*/
+}
+#figura{
+	border: black 3px solid;
+	float: left;
+	margin: 10px;
+	display: block; /*block hace que la figura no comparta espacio a los lados con otros objetos dentro del contenedor*/
+	text-align: center;
+}
+#menu{
+	border: black 3px solid;
+	float: left;
+	margin: 10px;
+	display: block; /*block hace que el menu no comparta espacio a los lados con otros objetos dentro del contenedor*/
+	text-align: center;
+	width: 150px;
+}
+#encabezado{
+	border: black 3px solid;
+	width: 400px;
+}

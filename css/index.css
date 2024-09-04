@@ -1,0 +1,119 @@
+#cuerpoIndex{
+    background-color: rgb(57, 170, 214);
+    margin: 0;
+    overflow: auto;	
+}
+main{
+	background-color: yellow;
+	width: 55%;
+	float: left;
+	text-align: center;
+
+	border: 1px solid blue;
+	column-count: 3;
+
+}
+
+aside{
+	width: 44%;
+	float: right;
+	margin: auto;
+	background-color: rgb(228, 149, 0);
+	padding: 5px;
+	text-align: center;
+	
+}
+
+#lista1{
+	margin: 0 auto;
+	list-style: none;
+
+	display: inline-block;
+}
+#lista1 > li{
+	float: left;
+}
+#lista1 li a{
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	color: black;
+	font-weight: bold;
+}
+#lista1 li a:hover{
+	background-color: orange;
+}
+#lista1 li ul {
+	display:none;
+	position:absolute; /*relative hace que crezca el contenedor de fondo naranja al desplegar la lista*/
+}
+#lista1 li:hover > ul {
+	display:block;
+	background-color: rgb(228, 149, 0);
+	list-style: outside;
+}
+#lsita1 li ul li {
+	position:relative;
+}
+
+#lista1 li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+.caja1{ /*clase caja1*/
+	color: brown;
+	font-weight: bold;
+	background-color: green;
+	background-image: url(../imagenes/mario/fondo2.jpg);
+	background-repeat: round;
+	overflow-y: scroll;
+	width: 400px;
+	height: 300px;
+	display: inline-block; /* INLINE ignora el tamaño establecido */
+	margin: 10px;
+	padding: 30px;
+}
+
+footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+
+header{
+	padding: 10px;
+	text-align: center;
+}
+
+#menu{
+	height: 60px;
+	background-color:blue;
+	padding: 10px;
+}
+
+#menu ul{
+	list-style: none;
+	display: inline-block;
+}
+
+#menu ul li{
+	float: left;
+}
+
+#menu ul li a {
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	font-size: 20px;
+	padding:15px;
+}
+
+#menu ul li a:hover{
+	background-color: rgb(57, 170, 214);
+}

@@ -1,0 +1,255 @@
+
+/*aside#listas ul li a{
+	color: blue;
+}*/
+
+*{
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+	color:black;
+}
+
+section{
+	border: 2px solid blue;
+}
+
+section article{
+	color:Red;
+}
+
+.bloqueUno a {
+	color: white;
+	display: block;
+	background-color: coral;
+	width: 50%;
+	padding: 25px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	margin:auto;	
+}
+.bloqueUno a:hover{
+	color: black;
+	background-color: aqua;
+	width: 75%;
+}
+
+#uno, #dos, #tres{
+	border: 1px solid red;
+	width: 300px;
+}
+#uno span{
+	color: purple;
+	border: 1px dashed green;
+}
+#uno span:first-child{
+	display: block;
+	width: 300 px;	
+}
+#uno span:nth-child(2){
+	display: table;
+	width: 300 px;	
+}
+#uno span:last-child{
+	display: inline; /*POR DEFECTO*/
+	width: 300px;
+}
+#uno{
+	color: white;
+	background-color: yellow;
+	float: right;
+	background-image: url(/home/daniel/Documentos/html_css_js/imagenes/mario/fondo1.jpg);
+	background-size: 10%;
+}
+#dos{
+	background-color: skyblue;
+	clear: right;
+}
+#tres{
+	width: 100%;
+}
+
+#tablaMushroom{
+	width: 50%;
+	background-image: url(/home/daniel/Documentos/html_css_js/imagenes/mario/fondo2.jpg);
+	border-spacing: 20px;
+	padding: 0px;
+}
+#tablaMushroom tr td{
+	padding: 10px;
+}
+
+.cajaBorder{
+	width: 300px;
+	height: 200px;
+	background: orange;
+
+	border-top:10px solid red;
+	border-right: 15px dotted blue;
+	border-bottom: 15px double green;
+	border-left: 10px dashed black;
+	position: relative;
+	left: 50px;
+	top:50px;
+}
+
+article + p{
+	font-size: 20px; /*El estilo se aplica solo a la segunda etiqueta*/
+}
+
+#seccionFormulario p{
+	font-family: sans-serif;
+	font-style: oblique;
+	color: blue;
+}
+
+#cajaImagenes1{
+	margin-bottom: 300px;
+	color: blue;
+	background-color: lightgreen;
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	background-image: url(/home/daniel/Documentos/html_css_js/imagenes/mario/Shell_Green.png);
+	background-repeat: repeat-x;
+}
+
+#cajaImagenes2{
+	position: absolute; /*DEJO COLOCAR LA CAJA ALINEADA CON LA CAJA 1*/
+	margin-left: 10px;
+	color: blue;
+	background-color: lightgreen;
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	background-image: url(/home/daniel/Documentos/html_css_js/imagenes/mario/Shell_Red.png);
+	overflow-y: scroll;
+	background-attachment: fixed; /*scroll, local*/
+}
+
+#cajaImagenes3{
+	position: relative;
+	color: blue;
+	background-color: lightgreen;
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	background-image: url(/home/daniel/Documentos/html_css_js/imagenes/mario/Shell_Green.png);
+	background-repeat: no-repeat;
+	background-position: 10%; /*20 30 ; bottom right*/
+}
+
+legend > h1:hover, legend:hover{ /*Cuando pasa el cursor cambia a rojo*/
+	color:red;
+}
+
+legend:active{ /*Cuando se da click cambia a azul*/
+	color:blue;
+}
+
+/*p:first-letter{} /*Aplica a la primera letra del parrafo*/
+	
+/*p:first-line{} /*Aplica el color verde a la primera linea*/	
+
+li{ 
+	list-style-image: url();
+	list-style-position: outside; /*outside, inside*/
+}
+
+
+/*
+POSITION RELATIVE
+-Se mueve en base al lugar donde se ubica originalmente, puede ser cualquier parte de la pantalla
+
+POSITION ABSOLUTE
+-Se mueve en base al objeto padre que lo contenga, o en base a la pantalla del navegador
+
+POSITION FIXED
+-Se mueve en base a la pantalla del navegador
+
+background-repeat 
+*no-repeat: NO REPITE LA IMAGEN DE FONDO
+*repeat-y: REPITE LA IMAGEN DE ARRIBA HACIA ABAJO
+*repeat-x: REPITE LA IMAGEN DE IZQUIERDA A DERECHA
+*repeat: valor por defecto, repite la imagen en X y Y
+*space: crea un espacio entre las imagenes, solo si es necesario
+*roud: ajusta las imagenes para que no se repitan tanto*
+*repeat no-repeat: REPITE LA IMAGEN SOLO EN X
+*no-repeat repeat: REPITE LA IMAGEN SOLO EN Y
+
+background-attachment
+*fixed: EL FONDO NO SE MUEVE
+*local: EL FONDO SE MUEVE 
+*scroll: EL FONDO SE MUEVE SI SE MUEVE EL OBJETO QUE LO CONTIENE, EL FONDO NO SE MUEVE JUNTO CON EL CONTENIDO DEL OBJETO
+
+background-clip
+*border-box: la imagen de fondo forma parte de los bordes
+*padding-box: la imagen de fondo no forma parte de los bordes
+*content-box: la imagen de fondo solo forma parte del contenido, (si padding del contenedor > 0)
+
+border-image-
+-source: url de la imagen
+-width: grosor del borde
+-outset: distancia del borde de la imagen
+-repeat: tipo de repeticion de la imagen
+
+box-shadow:
+1. distancia horizontal de la sombra
+2. distancia vertical de la sombra
+3. valor del difuminado
+4. valor de extension de la sombra (acepta negativos)
+5. color de la sombra
+(10px, 15px, 8px, 2px, rgb)
+
+
+
+
+input[type="submit"]{}
+-aplica estilo solo a los input de type="submit"
+
+table{
+	font-size: 24px;
+	border: 1px solid black;
+	border-collape: separated; //collape
+	border-spacing: 10px;
+	empty-cells:hide;
+	caption-side: bottom;
+}
+tr{
+	border: 1px solid black; //coloca borde a las filas, junto con border-collape
+}
+*/
+
+
+
+/*
+LISTAS ORDENADAS
+<OL></OL>
+-Start: numero donde inicia la lista
+-reversed: para que la numeracion empieze de arriba hacia abajo
+<li></li>
+-Value: tomara el numero indicado, y el resto de la lista se ira en orden
+
+LISTAS DESCRIPTIVAS
+<dl>
+<dt></dt>
+	<dd></dd>
+<dt></dt>
+	<dd></dd>
+<dt></dt>
+	<dd></dd>	
+</dl>
+
+IMAGEN
+<img>
+alt: TEXTO QUE SE MOSTRARA SI NO CARGA LA IMAGEN, TAMBIEN SIRVE PARA LOS MOTORES DE BUSQUEDA
+
+FIGURA
+<figure>
+	<img>: imagen como figura, (puede ir video, audio, etc)
+	<figcaption></figcaption>: leyenda de la figura
+</figure>
+*/
