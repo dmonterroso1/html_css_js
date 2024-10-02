@@ -14,7 +14,7 @@ function algoAsincrono()
 
 console.log('Inicio código');
 setInterval(() => {
-    'Hola Daniel! \n Esto es un bloque asíncrono'
+    'Hola Mundo! \n Esto es un bloque asíncrono'
 }, 6000);
 //setInterval(algoAsincrono,6000);
 console.log('Fin del código');
